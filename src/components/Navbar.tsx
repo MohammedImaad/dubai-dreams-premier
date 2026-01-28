@@ -78,7 +78,7 @@ export const Navbar = () => {
 
             {/* Contact Button */}
             <a href="#book-call">
-              <Button className="bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground font-bold uppercase tracking-wider text-xs px-6 py-3 hover:shadow-glow-lg transition-all duration-300 hover:-translate-y-0.5">
+              <Button className="bg-gradient-to-r from-primary to-gold-600 text-primary-foreground font-bold uppercase tracking-wider text-xs px-6 py-3 hover:shadow-glow-lg transition-all duration-300 hover:-translate-y-0.5">
                 <Phone className="h-4 w-4 mr-2" />
                 {t.nav.contact}
               </Button>
@@ -126,7 +126,7 @@ export const Navbar = () => {
               </div>
 
               <a href="#book-call" onClick={() => setIsOpen(false)}>
-                <Button className="w-full bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground font-bold uppercase tracking-wider mt-2">
+                <Button className="w-full bg-gradient-to-r from-primary to-gold-600 text-primary-foreground font-bold uppercase tracking-wider mt-2">
                   {t.nav.contact}
                 </Button>
               </a>

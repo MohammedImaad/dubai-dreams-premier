@@ -37,10 +37,10 @@ export const Services = () => {
                 style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
               >
                 {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-cyan-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-gold-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 
                 <div className="relative z-10">
-                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-primary/20 to-cyan-600/20 flex items-center justify-center mb-6 border border-primary/30 group-hover:shadow-glow transition-all duration-300">
+                  <div className="w-14 h-14 rounded-lg bg-gradient-to-br from-primary/20 to-gold-600/20 flex items-center justify-center mb-6 border border-primary/30 group-hover:shadow-glow transition-all duration-300">
                     <Icon className="h-7 w-7 text-primary" />
                   </div>
                   <h3 className="text-xl font-bold text-foreground mb-3 group-hover:text-primary transition-colors">

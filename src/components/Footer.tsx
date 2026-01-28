@@ -88,7 +88,7 @@ export const Footer = () => {
                 placeholder="Email address"
                 className="flex-1 px-4 py-2 bg-background border border-border rounded text-sm focus:outline-none focus:border-primary"
               />
-              <button className="px-4 py-2 bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground text-sm font-bold rounded hover:shadow-glow transition-all">
+              <button className="px-4 py-2 bg-gradient-to-r from-primary to-gold-600 text-primary-foreground text-sm font-bold rounded hover:shadow-glow transition-all">
                 →
               </button>
             </div>

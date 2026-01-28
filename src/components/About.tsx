@@ -43,7 +43,7 @@ export const About = () => {
                     className="flex gap-4 animate-slideUp opacity-0"
                     style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
                   >
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-cyan-600/20 flex items-center justify-center border border-primary/30">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-gold-600/20 flex items-center justify-center border border-primary/30">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
@@ -78,7 +78,7 @@ export const About = () => {
             </div>
             
             {/* Decorative glow */}
-            <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 via-cyan-600/10 to-primary/10 blur-3xl -z-10 rounded-3xl" />
+            <div className="absolute -inset-4 bg-gradient-to-r from-primary/10 via-gold-600/10 to-primary/10 blur-3xl -z-10 rounded-3xl" />
           </div>
         </div>
       </div>

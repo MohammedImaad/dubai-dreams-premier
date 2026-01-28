@@ -34,12 +34,12 @@ export const Hero = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slideUp opacity-0 [animation-delay:400ms] [animation-fill-mode:forwards]">
             <a href="#properties">
-              <Button className="bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground font-bold uppercase tracking-wider text-sm px-8 py-6 hover:shadow-glow-lg transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto">
+              <Button className="bg-gradient-to-r from-primary to-gold-600 text-primary-foreground font-bold uppercase tracking-wider text-sm px-8 py-6 hover:shadow-glow-lg transition-all duration-300 hover:-translate-y-1 w-full sm:w-auto">
                 {t.hero.viewProperties}
               </Button>
             </a>
             <a href="#book-call">
-              <Button variant="outline" className="border-2 border-foreground/30 text-foreground font-bold uppercase tracking-wider text-sm px-8 py-6 hover:bg-foreground/10 hover:border-primary hover:text-primary transition-all duration-300 w-full sm:w-auto">
+              <Button variant="outline" className="border-2 border-primary/50 text-foreground font-bold uppercase tracking-wider text-sm px-8 py-6 hover:bg-primary/10 hover:border-primary hover:text-primary transition-all duration-300 w-full sm:w-auto">
                 {t.hero.scheduleConsultation}
               </Button>
             </a>
