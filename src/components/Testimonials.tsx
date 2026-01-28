@@ -49,7 +49,7 @@ export const Testimonials = () => {
               </p>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-cyan-600/30 flex items-center justify-center text-xl font-bold text-primary">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary/30 to-gold-600/30 flex items-center justify-center text-xl font-bold text-primary">
                   {testimonial.author.charAt(0)}
                 </div>
                 <div>

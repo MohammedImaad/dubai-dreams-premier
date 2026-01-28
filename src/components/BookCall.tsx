@@ -115,7 +115,7 @@ export const BookCall = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground font-bold uppercase tracking-wider text-sm py-6 hover:shadow-glow-lg transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-primary to-gold-600 text-primary-foreground font-bold uppercase tracking-wider text-sm py-6 hover:shadow-glow-lg transition-all duration-300"
                 >
                   {t.bookCall.submit}
                 </Button>

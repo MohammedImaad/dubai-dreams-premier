@@ -111,7 +111,7 @@ export const FeaturedProperties = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60" />
                 {property.featured && (
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground px-4 py-2 text-xs font-bold uppercase tracking-wider">
+                  <div className="absolute top-4 right-4 bg-gradient-to-r from-primary to-gold-600 text-primary-foreground px-4 py-2 text-xs font-bold uppercase tracking-wider">
                     {t.featured.featured}
                   </div>
                 )}
@@ -145,7 +145,7 @@ export const FeaturedProperties = () => {
                   {getDescription(property)}
                 </p>
 
-                <Button className="w-full bg-gradient-to-r from-primary to-cyan-600 text-primary-foreground font-bold uppercase tracking-wider text-xs hover:shadow-glow transition-all duration-300">
+                <Button className="w-full bg-gradient-to-r from-primary to-gold-600 text-primary-foreground font-bold uppercase tracking-wider text-xs hover:shadow-glow transition-all duration-300">
                   {t.featured.viewDetails}
                 </Button>
               </div>
