@@ -15,7 +15,7 @@ export const About = () => {
     <section id="about" className="py-20 md:py-32 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 gradient-text">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extralight uppercase tracking-[0.15em] mb-4 text-foreground">
             {t.about.title}
           </h2>
         </div>
@@ -43,7 +43,7 @@ export const About = () => {
                     className="flex gap-4 animate-slideUp opacity-0"
                     style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
                   >
-                    <div className="flex-shrink-0 w-12 h-12 rounded-lg bg-gradient-to-br from-primary/20 to-gold-600/20 flex items-center justify-center border border-primary/30">
+                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center">
                       <Icon className="h-6 w-6 text-primary" />
                     </div>
                     <div>
