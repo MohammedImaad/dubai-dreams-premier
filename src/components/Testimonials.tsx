@@ -26,7 +26,7 @@ export const Testimonials = () => {
     <section className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tight mb-4 gradient-text">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extralight uppercase tracking-[0.15em] mb-4 text-foreground">
             {t.testimonials.title}
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

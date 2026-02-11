@@ -125,7 +125,7 @@ const translations: Record<Language, Translations> = {
       contact: 'Contact Us',
     },
     hero: {
-      title: 'Luxury Real Estate Excellence in Dubai',
+      title: 'Invest in Dubai Real Estate with Stark',
       subtitle: "Discover exclusive properties in Dubai's most prestigious locations. Expert guidance for discerning buyers and sellers.",
       viewProperties: 'View Properties',
       scheduleConsultation: 'Schedule Consultation',
@@ -237,7 +237,7 @@ const translations: Record<Language, Translations> = {
       contact: 'اتصل بنا',
     },
     hero: {
-      title: 'التميز في العقارات الفاخرة في دبي',
+      title: 'استثمر في عقارات دبي مع ستارك',
       subtitle: 'اكتشف العقارات الحصرية في أرقى مواقع دبي. إرشاد متخصص للمشترين والبائعين المميزين.',
       viewProperties: 'عرض العقارات',
       scheduleConsultation: 'حجز استشارة',
@@ -349,7 +349,7 @@ const translations: Record<Language, Translations> = {
       contact: '联系我们',
     },
     hero: {
-      title: '迪拜豪华房地产卓越典范',
+      title: '与Stark一起投资迪拜房地产',
       subtitle: '探索迪拜最负盛名地段的独家房产。为挑剔的买家和卖家提供专业指导。',
       viewProperties: '查看房产',
       scheduleConsultation: '预约咨询',
@@ -461,7 +461,7 @@ const translations: Record<Language, Translations> = {
       contact: 'Kontakt',
     },
     hero: {
-      title: 'Luxus-Immobilien-Exzellenz in Dubai',
+      title: 'Investieren Sie in Dubai Immobilien mit Stark',
       subtitle: 'Entdecken Sie exklusive Immobilien in Dubais prestigeträchtigsten Lagen. Fachkundige Beratung für anspruchsvolle Käufer und Verkäufer.',
       viewProperties: 'Immobilien Ansehen',
       scheduleConsultation: 'Beratung Vereinbaren',

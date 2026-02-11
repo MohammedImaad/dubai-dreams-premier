@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 /* STARK Real Estate Design System - Luxury Dubai Theme */
@@ -81,7 +82,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Raleway', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 }
 
