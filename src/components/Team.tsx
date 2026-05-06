@@ -1,58 +1,73 @@
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronLeft, ChevronRight, Linkedin, Mail } from 'lucide-react';
+import team1 from '@/assets/team-1.jpg';
+import team2 from '@/assets/team-2.jpg';
+import team3 from '@/assets/team-3.jpg';
+import team4 from '@/assets/team-4.jpg';
+import team5 from '@/assets/team-5.jpg';
+import team6 from '@/assets/team-6.jpg';
+import team7 from '@/assets/team-7.jpg';
 
 const team = [
   {
     id: 1,
-    nameEn: 'Ahmed Al-Rashid',
-    nameAr: 'أحمد الراشد',
-    nameZh: '艾哈迈德·拉希德',
-    nameDe: 'Ahmed Al-Rashid',
-    roleKey: 'ceo' as const,
+    name: 'Khalid Al-Mansoori',
+    role: 'Founder & CEO',
+    bio: 'Three decades shaping Dubai’s most coveted addresses and private portfolios.',
+    image: team1,
   },
   {
     id: 2,
-    nameEn: 'Sarah Mitchell',
-    nameAr: 'سارة ميتشل',
-    nameZh: '萨拉·米切尔',
-    nameDe: 'Sarah Mitchell',
-    roleKey: 'salesDirector' as const,
+    name: 'Isabella Laurent',
+    role: 'Luxury Property Advisor',
+    bio: 'Curating signature residences across Palm Jumeirah and Emirates Hills.',
+    image: team2,
   },
   {
     id: 3,
-    nameEn: 'Mohammed Hassan',
-    nameAr: 'محمد حسن',
-    nameZh: '穆罕默德·哈桑',
-    nameDe: 'Mohammed Hassan',
-    roleKey: 'seniorAgent' as const,
+    name: 'Rohan Kapoor',
+    role: 'Investment Consultant',
+    bio: 'Strategic advisor to institutional and ultra-high-net-worth investors.',
+    image: team3,
   },
   {
     id: 4,
-    nameEn: 'Elena Volkov',
-    nameAr: 'إيلينا فولكوف',
-    nameZh: '埃琳娜·沃尔科夫',
-    nameDe: 'Elena Volkov',
-    roleKey: 'marketingHead' as const,
+    name: 'Mei-Lin Zhao',
+    role: 'Client Relations Director',
+    bio: 'Concierge-grade representation for an international private clientele.',
+    image: team4,
+  },
+  {
+    id: 5,
+    name: 'Marcus Adeyemi',
+    role: 'Waterfront Property Specialist',
+    bio: 'Authority on beachfront villas, marina residences and island estates.',
+    image: team5,
+  },
+  {
+    id: 6,
+    name: 'Sofia Marquez',
+    role: 'International Sales Advisor',
+    bio: 'Bridging European, Latin American and Gulf private capital.',
+    image: team6,
+  },
+  {
+    id: 7,
+    name: 'Layla Al-Hashimi',
+    role: 'Architecture & Design Consultant',
+    bio: 'Bespoke interiors and architectural curation for trophy assets.',
+    image: team7,
   },
 ];
 
 export const Team = () => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
   const scrollRef = useRef<HTMLDivElement>(null);
-
-  const getName = (member: typeof team[0]) => {
-    switch (language) {
-      case 'ar': return member.nameAr;
-      case 'zh': return member.nameZh;
-      case 'de': return member.nameDe;
-      default: return member.nameEn;
-    }
-  };
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const scrollAmount = 300;
+      const scrollAmount = 320;
       scrollRef.current.scrollBy({
         left: direction === 'left' ? -scrollAmount : scrollAmount,
         behavior: 'smooth',
@@ -75,12 +90,14 @@ export const Team = () => {
           <div className="hidden md:flex gap-2">
             <button
               onClick={() => scroll('left')}
+              aria-label="Scroll left"
               className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               <ChevronLeft className="h-5 w-5" />
             </button>
             <button
               onClick={() => scroll('right')}
+              aria-label="Scroll right"
               className="w-12 h-12 rounded-full border border-primary/30 flex items-center justify-center text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               <ChevronRight className="h-5 w-5" />
@@ -96,29 +113,36 @@ export const Team = () => {
           {team.map((member, index) => (
             <div
               key={member.id}
-              className="group flex-shrink-0 w-[280px] text-center animate-slideUp opacity-0"
+              className="group flex-shrink-0 w-[300px] animate-slideUp opacity-0"
               style={{ animationDelay: `${index * 100}ms`, animationFillMode: 'forwards' }}
             >
-              {/* Avatar */}
-              <div className="relative w-48 h-48 mx-auto mb-6">
-                <div className="w-full h-full rounded-full bg-gradient-to-br from-secondary to-card border border-primary/30 flex items-center justify-center text-6xl font-extralight text-primary/50 group-hover:border-primary/60 transition-all duration-300 group-hover:shadow-glow">
-                  {getName(member).charAt(0)}
-                </div>
+              <div className="relative w-full aspect-[4/5] mb-6 overflow-hidden border border-primary/20 group-hover:border-primary/60 transition-all duration-500">
+                <img
+                  src={member.image}
+                  alt={member.name}
+                  loading="lazy"
+                  width={768}
+                  height={768}
+                  className="w-full h-full object-cover grayscale-[20%] group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
               </div>
 
               <h3 className="text-xl font-light tracking-wide text-foreground mb-1 group-hover:text-primary transition-colors">
-                {getName(member)}
+                {member.name}
               </h3>
-              <p className="text-primary text-sm font-light mb-4">
-                {t.team[member.roleKey]}
+              <p className="text-primary text-sm font-light tracking-wider uppercase mb-3">
+                {member.role}
+              </p>
+              <p className="text-muted-foreground text-sm font-light leading-relaxed mb-4">
+                {member.bio}
               </p>
 
-              {/* Social Icons - no background */}
-              <div className="flex justify-center gap-3">
-                <button className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
+              <div className="flex gap-3">
+                <button aria-label="LinkedIn" className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
                   <Linkedin className="h-5 w-5" />
                 </button>
-                <button className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
+                <button aria-label="Email" className="w-10 h-10 flex items-center justify-center text-muted-foreground hover:text-primary transition-all duration-300">
                   <Mail className="h-5 w-5" />
                 </button>
               </div>

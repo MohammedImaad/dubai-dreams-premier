@@ -68,7 +68,7 @@ export const About = () => {
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">Properties Sold</div>
               </div>
               <div className="bg-card/60 border border-primary/20 p-8 text-center animate-slideUp opacity-0 [animation-delay:300ms] [animation-fill-mode:forwards]">
-                <div className="text-4xl md:text-5xl font-black gradient-text mb-2">2B+</div>
+                <div className="text-4xl md:text-5xl font-black gradient-text mb-2">500M+</div>
                 <div className="text-sm text-muted-foreground uppercase tracking-wider">AED Transactions</div>
               </div>
               <div className="bg-card/60 border border-primary/20 p-8 text-center animate-slideUp opacity-0 [animation-delay:400ms] [animation-fill-mode:forwards]">
