@@ -18,7 +18,7 @@ const Index = () => {
           <Navbar />
           <Hero />
           <FeaturedProperties />
-          <SignatureProperties />
+          {/* <SignatureProperties /> temporarily hidden */}
           <About />
           <Team />
           <Testimonials />
