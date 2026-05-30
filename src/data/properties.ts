@@ -25,6 +25,19 @@ import tilal2 from '@/assets/properties/tilal_binghatti/page_2.jpg';
 import tilal3 from '@/assets/properties/tilal_binghatti/page_3.jpg';
 import tilal4 from '@/assets/properties/tilal_binghatti/page_4.jpg';
 
+import maybach1 from '@/assets/properties/maybach_binghatti_city/page_1.jpg';
+import maybach2 from '@/assets/properties/maybach_binghatti_city/page_2.jpg';
+import maybach3 from '@/assets/properties/maybach_binghatti_city/page_3.jpg';
+import maybach4 from '@/assets/properties/maybach_binghatti_city/page_4.jpg';
+import maybach5 from '@/assets/properties/maybach_binghatti_city/page_5.jpg';
+
+import raw1 from '@/assets/properties/raw_district/page_1.jpg';
+import raw2 from '@/assets/properties/raw_district/page_2.jpg';
+import raw3 from '@/assets/properties/raw_district/page_3.jpg';
+import raw4 from '@/assets/properties/raw_district/page_4.jpg';
+import raw5 from '@/assets/properties/raw_district/page_5.jpg';
+
+
 
 
 export interface Property {
@@ -138,6 +151,54 @@ export const PROPERTIES: Property[] = [
     ],
     hero: tilal1,
     gallery: [tilal1, tilal2, tilal3, tilal4],
+    featured: true,
+  },
+  {
+    id: 'maybach-binghatti-city',
+    title: 'Mercedes-Benz Places | Binghatti City',
+    location: 'Nad Al Sheba, Dubai',
+    specs: ['Studio', '1 Bed', '2 Bed', '3 Bed', '4 Bed', '5 Bed'],
+    highlight: '12-Tower Masterplanned City',
+    description:
+      'A landmark masterplanned community of 12 sculpted towers where Mercedes-Benz design philosophy meets architectural foresight. Monumental scale, kinetic forms, and a Grand Promenade of curated lifestyle experiences minutes from Downtown Dubai.',
+    propertyType: 'Residential & Retail',
+    completionYear: 'Branded Residences',
+    features: [
+      '12 sculpted towers',
+      'Sky infinity pool & podium pool',
+      'Private pools & spa service',
+      'Skyline jogging path',
+      'Concierge & valet service',
+      'Solar photovoltaic technology',
+      'LEED certification target',
+      'Grand Promenade with retail & F&B',
+    ],
+    hero: maybach1,
+    gallery: [maybach1, maybach2, maybach3, maybach4, maybach5],
+    featured: true,
+  },
+  {
+    id: 'raw-district-dubai',
+    title: 'Raw District – Dubai',
+    location: 'Sheikh Zayed Road, Downtown Jebel Ali',
+    specs: ['Studio', '1 Bed Suite', '1 Bed', '2 Bed', '3 Bed', 'Office', 'Retail'],
+    highlight: 'Life in Display',
+    description:
+      'An urban lifestyle philosophy by Imtiaz. Fully furnished, minimal-by-design residences paired with a cultural ecosystem of co-working, gallery, gym, podcast studios, and curated social rituals at the convergence of Dubai Marina, Expo City and Al Maktoum International.',
+    propertyType: 'Mixed-Use Lifestyle District',
+    completionYear: 'Handover Q1 2029',
+    features: [
+      'District Table communal dining',
+      'Raw Pro Gym & wellness zones',
+      'The Studio – podcast & media',
+      'Indoor & outdoor cinema',
+      'Co-working & private offices',
+      'Cold plunges & yoga deck',
+      'Zero gravity nap pods',
+      'Smart home & acoustic detailing',
+    ],
+    hero: raw1,
+    gallery: [raw1, raw2, raw3, raw4, raw5],
     featured: true,
   },
 ];
