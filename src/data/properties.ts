@@ -25,6 +25,19 @@ import tilal2 from '@/assets/properties/tilal_binghatti/page_2.jpg';
 import tilal3 from '@/assets/properties/tilal_binghatti/page_3.jpg';
 import tilal4 from '@/assets/properties/tilal_binghatti/page_4.jpg';
 
+import maybach1 from '@/assets/properties/maybach_binghatti_city/page_1.jpg';
+import maybach2 from '@/assets/properties/maybach_binghatti_city/page_2.jpg';
+import maybach3 from '@/assets/properties/maybach_binghatti_city/page_3.jpg';
+import maybach4 from '@/assets/properties/maybach_binghatti_city/page_4.jpg';
+import maybach5 from '@/assets/properties/maybach_binghatti_city/page_5.jpg';
+
+import raw1 from '@/assets/properties/raw_district/page_1.jpg';
+import raw2 from '@/assets/properties/raw_district/page_2.jpg';
+import raw3 from '@/assets/properties/raw_district/page_3.jpg';
+import raw4 from '@/assets/properties/raw_district/page_4.jpg';
+import raw5 from '@/assets/properties/raw_district/page_5.jpg';
+
+
 
 
 export interface Property {
