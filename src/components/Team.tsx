@@ -1,65 +1,34 @@
 import { useRef } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { ChevronLeft, ChevronRight, Linkedin, Mail } from 'lucide-react';
-import team1 from '@/assets/team-1.jpg';
-import team2 from '@/assets/team-2.jpg';
-import team3 from '@/assets/team-3.jpg';
-import team4 from '@/assets/team-4.jpg';
-import team5 from '@/assets/team-5.jpg';
-import team6 from '@/assets/team-6.jpg';
-import team7 from '@/assets/team-7.jpg';
+import teamZain from '@/assets/team-zain.jpg';
+import teamEssam from '@/assets/team-essam.png';
+import teamImaad from '@/assets/team-imaad.jpg';
 
 const team = [
   {
     id: 1,
-    name: 'Khalid Al-Mansoori',
+    name: 'Zain Khan',
     role: 'Founder & CEO',
-    bio: 'Three decades shaping Dubai’s most coveted addresses and private portfolios.',
-    image: team1,
+    bio: 'Leading the vision behind Dubai’s most distinguished private real estate portfolios.',
+    image: teamZain,
   },
   {
     id: 2,
-    name: 'Isabella Laurent',
-    role: 'Luxury Property Advisor',
-    bio: 'Curating signature residences across Palm Jumeirah and Emirates Hills.',
-    image: team2,
+    name: 'Essam Thouheed',
+    role: 'Real Estate Agent',
+    bio: 'Trusted advisor curating premium residences for an international clientele.',
+    image: teamEssam,
   },
   {
     id: 3,
-    name: 'Rohan Kapoor',
-    role: 'Investment Consultant',
-    bio: 'Strategic advisor to institutional and ultra-high-net-worth investors.',
-    image: team3,
-  },
-  {
-    id: 4,
-    name: 'Mei-Lin Zhao',
-    role: 'Client Relations Director',
-    bio: 'Concierge-grade representation for an international private clientele.',
-    image: team4,
-  },
-  {
-    id: 5,
-    name: 'Marcus Adeyemi',
-    role: 'Waterfront Property Specialist',
-    bio: 'Authority on beachfront villas, marina residences and island estates.',
-    image: team5,
-  },
-  {
-    id: 6,
-    name: 'Sofia Marquez',
-    role: 'International Sales Advisor',
-    bio: 'Bridging European, Latin American and Gulf private capital.',
-    image: team6,
-  },
-  {
-    id: 7,
-    name: 'Layla Al-Hashimi',
-    role: 'Architecture & Design Consultant',
-    bio: 'Bespoke interiors and architectural curation for trophy assets.',
-    image: team7,
+    name: 'Imaad Thouheed',
+    role: 'Real Estate Agent',
+    bio: 'Specialist in Dubai’s most sought-after addresses and investment opportunities.',
+    image: teamImaad,
   },
 ];
+
 
 export const Team = () => {
   const { t } = useLanguage();
