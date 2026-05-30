@@ -20,6 +20,13 @@ import seacliff4 from '@/assets/properties/sea_cliff_by_imtiaz/page_9.jpg';
 import seacliff5 from '@/assets/properties/sea_cliff_by_imtiaz/page_8.jpg';
 import seacliff6 from '@/assets/properties/sea_cliff_by_imtiaz/page_3.jpg';
 
+import tilal1 from '@/assets/properties/tilal_binghatti/page_1.jpg';
+import tilal2 from '@/assets/properties/tilal_binghatti/page_2.jpg';
+import tilal3 from '@/assets/properties/tilal_binghatti/page_3.jpg';
+import tilal4 from '@/assets/properties/tilal_binghatti/page_4.jpg';
+
+
+
 export interface Property {
   id: string;
   title: string;
@@ -107,6 +114,30 @@ export const PROPERTIES: Property[] = [
     ],
     hero: seacliff1,
     gallery: [seacliff1, seacliff2, seacliff3, seacliff4, seacliff5, seacliff6],
+    featured: true,
+  },
+  {
+    id: 'tilal-binghatti-jvc',
+    title: 'Tilal – Binghatti',
+    location: 'Jumeirah Village Circle, Dubai',
+    specs: ['Studio', '1 Bed', '2 Bed'],
+    highlight: 'Wellness Amenities',
+    description:
+      'Modern luxury residences in JVC featuring wellness-focused amenities, elegant interiors, resort-style pools, yoga spaces, and seamless city connectivity.',
+    propertyType: 'Residential Tower',
+    completionYear: 'Completion 2026',
+    features: [
+      'Adult & children swimming pools',
+      'Jacuzzi & sun deck',
+      'Yoga / aerobics platform',
+      'Walking & bicycle paths',
+      'Premium marble & oak finishes',
+      'Modern geometric architecture',
+      'Retail & residential tower',
+      'Floor-to-ceiling windows',
+    ],
+    hero: tilal1,
+    gallery: [tilal1, tilal2, tilal3, tilal4],
     featured: true,
   },
 ];
